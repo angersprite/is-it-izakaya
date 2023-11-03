@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import './styles/App.css'
+import { getMedia } from './services/mediaService'
+import { useState, useEffect } from 'react'
+import MediaDisplay from './components/MediaDisplay'
+import Ballot from './components/Ballot'
+import TraversalButtons from './components/Traversal'
+
+export default function App() {
+  const [media, setMedia] = useState({})
+
+  useEffect(() => {
+    getMedia()
+      .then(res => { return res.json()})
+      .then(json => { setMedia(json) })
+  })
 
   return (
     <>
-      <MediaDisplay ></MediaDisplay>
+      <TraversalButtons></TraversalButtons>
+      <MediaDisplay media={media}></MediaDisplay>
+      <Ballot></Ballot>
     </>
   )
 }
-
-export default App

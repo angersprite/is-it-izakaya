@@ -1,0 +1,28 @@
+button.ballot-button {
+    width: 40%;
+    font-size: 2em;
+    margin: .4em;
+}
+
+#up-vote {
+    background-color: rgba(0, 200, 50, .1);
+}
+#up-vote:hover {
+    background-color: rgba(0, 200, 50, .2);
+}
+
+#down-vote {
+    background-color: rgba(200, 0, 50, .1);
+}
+
+#down-vote:hover {
+    background-color: rgba(200, 0, 50, .2);
+}
+
+@media (min-width: 600px) {
+    button.ballot-button {
+        font-size: 2em;
+        margin: .2em;
+        max-width: 150px;
+    }
+}

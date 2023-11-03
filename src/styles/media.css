@@ -1,0 +1,26 @@
+img.media-main-image {
+    width: 100%;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#description {
+    display: block;
+    text-align: left;
+    margin: 1em
+}
+
+@media (min-width: 600px) {
+    img.media-main-image {
+        max-width: 40%;
+        max-height: 40%;
+        border-radius: 1em;
+    }
+
+    details {
+        max-width: 800px;
+    }
+}
