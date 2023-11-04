@@ -3,6 +3,7 @@ button.ballot-button {
     font-size: 2em;
     margin: .4em;
     text-align: center;
+    padding: .4em;
 }
 
 #up-vote {
