@@ -1,10 +1,11 @@
 .traversal-button {
     margin: .5em;
     width: 45%;
+    background-color: rgba(255, 255, 255, .05);
 }
 
 .traversal-button:hover {
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 @media (min-width: 600px) {

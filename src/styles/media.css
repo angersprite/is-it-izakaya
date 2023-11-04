@@ -1,5 +1,5 @@
 img.media-main-image {
-    width: 100%;
+    max-width: 100%;
 }
 
 #title {
@@ -15,8 +15,7 @@ img.media-main-image {
 
 @media (min-width: 600px) {
     img.media-main-image {
-        max-width: 40%;
-        max-height: 40%;
+        max-width: 45%;
         border-radius: 1em;
     }
 

@@ -2,27 +2,40 @@ button.ballot-button {
     width: 40%;
     font-size: 2em;
     margin: .4em;
+    text-align: center;
 }
 
 #up-vote {
-    background-color: rgba(0, 200, 50, .1);
+    background-color: rgba(0, 200, 100, .2);
 }
-#up-vote:hover {
-    background-color: rgba(0, 200, 50, .2);
+#up-vote:hover:enabled {
+    background-color: rgba(0, 200, 100, .5);
+}
+
+#up-vote:disabled {
+    background-color: rgba(0, 200, 100, .5);
+    color: rgba(255, 255, 255, 0.87);
+    cursor: default;
 }
 
 #down-vote {
-    background-color: rgba(200, 0, 50, .1);
+    background-color: rgba(200, 0, 100, .2);
 }
 
-#down-vote:hover {
-    background-color: rgba(200, 0, 50, .2);
+#down-vote:hover:enabled {
+    background-color: rgba(200, 0, 100, .5);
+}
+
+#down-vote:disabled {
+    background-color: rgba(200, 0, 100, .5);
+    color: rgba(255, 255, 255, 0.87);
+    cursor: default;
 }
 
 @media (min-width: 600px) {
     button.ballot-button {
         font-size: 2em;
         margin: .2em;
-        max-width: 150px;
+        max-width: 200px;
     }
 }

@@ -1,9 +1,11 @@
+const apiBaseURL = 'https://isekai-or-not-api20231103201428.azurewebsites.net'
+
 export async function getMedia(id: number) {
     let media = {}
     if (id) {
-        media = await fetch(`https://localhost:7121/api/media/${id}`)
+        media = await fetch(`${apiBaseURL}/api/media/${id}`)
     } else {
-        media = await fetch(`https://localhost:7121/api/media`)
+        media = await fetch(`${apiBaseURL}/api/media`)
     }
     return media
 }

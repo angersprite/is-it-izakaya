@@ -13,13 +13,13 @@ export default function App() {
     getMedia()
       .then(res => { return res.json()})
       .then(json => { setMedia(json) })
-  })
-
+  }, [])
+  
   return (
     <>
       <TraversalButtons></TraversalButtons>
       <MediaDisplay media={media}></MediaDisplay>
-      <Ballot></Ballot>
+      <Ballot media={media}></Ballot>
     </>
   )
 }
