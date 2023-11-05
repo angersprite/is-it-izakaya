@@ -24,6 +24,7 @@ body {
 
 button {
   border-radius: 8px;
+  color: rgba(255, 255, 255, 0.87);
   border: 1px solid transparent;
   font-family: inherit;
   background-color: #1a1a1a;

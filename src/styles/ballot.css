@@ -6,6 +6,11 @@ button.ballot-button {
     padding: .4em;
 }
 
+.ballot-container {
+    display: flex;
+    justify-content: center;
+}
+
 #up-vote {
     background-color: rgba(0, 200, 100, .2);
 }

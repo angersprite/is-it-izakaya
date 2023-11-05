@@ -5,7 +5,7 @@ export default function MediaDisplay(props){
 
     return (
         <div className="card">
-            <img className="media-main-image" src={props.media.imageURL} alt="media image" />
+            <img className="media-main-image" src={props.media.image_url} alt="media image" />
             <details open={detailsOpen}>
                 <summary id="title">{props.media.title}</summary>
                 <p id="description">{props.media.description}</p>

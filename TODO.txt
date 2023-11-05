@@ -1,1 +1,6 @@
-layout
+add api endpoint for increasing vote count
+add api calls to vote count update
+remember that user voted on a media id
+populate Media table with more stuff
+add traversal between media ids
+add search for title

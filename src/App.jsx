@@ -8,10 +8,10 @@ import TraversalButtons from './components/Traversal'
 
 export default function App() {
   const [media, setMedia] = useState({})
+  const [mediaId, setMediaId] = useState(1)
 
   useEffect(() => {
-    getMedia()
-      .then(res => { return res.json()})
+    getMedia(mediaId)
       .then(json => { setMedia(json) })
   }, [])
   
